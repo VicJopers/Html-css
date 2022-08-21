@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens que se adaptam</title>
+    <link rel="shortcut icon" href="Pastinha de icone.ico" type="image/x-icon">
+    <style>
+        body{
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <h1>imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem grande">
+    </picture>
+    <h1>Reproduzindo audios</h1>
+
+    <p>Vamos aprender a reproduzir audios em html</p>
+
+    
+    <audio preload="metadate" autoplay controls loop>
+        <source src="midia/jinx arcane.mp3" type="audio/mpeg">
+        <!--Para colocar outros formatos de audio como o MP3, OGG e WAV, basta usar um conversor ou baixar esses formatos de audio e carrega-los aqui.-->
+    </audio>
+    <p>Caso não esteja ouvindo o audio clique aqui para baixar:</p>
+    <a href="midia/jinx arcane.mp3">BAIXAR AUDIO</a>
+
+    <h1>Agora vamos reproduzir um vídeo simples</h1>
+
+    <video width="600px" poster="imagens/foto-m.png" controls loop>
+        <source src="video/shrek.mp4" type="video/mp4">
+    </video>
+    <video width="700px" poster="imagens/foto-m.png" controls autoplay>
+        <source src="video/guerreiro.mp4" type="video/mp4"> 
+    </video>
+    <video width="500px" poster="imagens/foto-p.png" controls>
+       <source src="video/thanos.mp4" type="video/mp4">
+    </video>
+    
+</body>
+</html>
